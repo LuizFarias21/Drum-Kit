@@ -1,0 +1,70 @@
+* {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(img/background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.title {
+    color: whitesmoke;
+    margin: 0;
+    padding-top: 2.5rem;
+    text-align: center;
+    font-size: 5rem;
+    text-shadow: 2px 2px 1px gray;
+}
+
+
+.container-keys {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btnKey {
+    margin: 0.5rem;
+    width: 5rem;
+    height: 5rem;
+    border: 2px solid rgb(185, 185, 185);
+    background-color: whitesmoke;
+    color: rgb(46, 46, 46);
+    transition: 0.07s ease;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.7rem;
+    border-radius: 5px;
+}
+
+kbd {
+    color: black;
+    display: block;
+    font-size: 3.5rem;
+    text-shadow: 1px 1px 5px gray;
+  }
+
+.playing {
+    transform: scale(1.1);
+    border-color: rgb(206, 40, 40);
+    box-shadow: 0 0 1rem rgb(206, 40, 40);
+}
+
+.sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .btnKey {
+        width: 4rem;
+        height: 4rem;
+    }
+}
